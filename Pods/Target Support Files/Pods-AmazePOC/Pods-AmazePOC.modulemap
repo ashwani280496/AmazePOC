@@ -1,0 +1,6 @@
+framework module Pods_AmazePOC {
+  umbrella header "Pods-AmazePOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

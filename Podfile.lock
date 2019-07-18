@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.8.1)
+  - SVProgressHUD (2.2.5)
+  - TRON/Core (4.2.1):
+    - Alamofire (~> 4.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - SVProgressHUD
+  - TRON/Core
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - SVProgressHUD
+    - TRON
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TRON: eb0f572d97dd51ec309a27bc785ec82148500512
+
+PODFILE CHECKSUM: 95125a665c18156eaa3dbe9eb6648d5d235a4ec9
+
+COCOAPODS: 1.6.1
