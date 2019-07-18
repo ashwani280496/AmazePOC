@@ -16,9 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var renewalDateLbl: UILabel!
     @IBOutlet weak var nextWashDateLbl: UILabel!
     @IBOutlet weak var washesCollectionView: UICollectionView!
-    let washCellIdentifier = "washCell"
-    
     var response : ResponseModel?
+    
+    let washCellIdentifier = "washCell"
+
     
     override func viewDidLoad() {
         renewBtn.layer.cornerRadius = renewBtn.frame.height / 2
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
     }
     
     func getData() {
+        Utils.showProgress()
         var payload: [String:AnyObject] = [String:AnyObject]()
         payload["Carid"] = 40259 as AnyObject?
         let request = APIRequestHelper.RequestTask(parameters: payload)
@@ -39,10 +41,13 @@ class ViewController: UIViewController {
             self.renewalDateLbl.text = responseData.data[0].EndDate
             self.nextWashDateLbl.text = responseData.data[0].StartDate
             
+            // setting collectionview Delegets and datasources
             self.washesCollectionView.delegate = self
             self.washesCollectionView.dataSource = self
+            Utils.dissmissProgress()
         }, failure: {error in
-            print("Error")
+            Utils.dissmissProgress()
+            Utils.apiErrorHandling(error: error.errorModel!)
             
         })
     }

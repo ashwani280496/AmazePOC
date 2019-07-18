@@ -10,5 +10,7 @@ target 'AmazePOC' do
 pod 'TRON/Core'
 pod 'Alamofire'
 pod 'SVProgressHUD'  
+pod 'MaterialComponents/Snackbar'
+
 
 end

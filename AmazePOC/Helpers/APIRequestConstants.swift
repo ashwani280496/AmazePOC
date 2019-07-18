@@ -11,7 +11,7 @@ class APIRequestConstants{
     // Base URL
     static let baseUrl = "http://134.119.179.58:90"
     
-    static let accountUrl = "UserSubscription/GetUserMyAccount"
+    static let carInfoUrl = "UserSubscription/GetUserMyAccount"
     
 
 }

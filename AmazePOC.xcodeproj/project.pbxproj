@@ -18,7 +18,7 @@
 		126360A122DF235A007FDBC0 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126360A022DF235A007FDBC0 /* APIErrorModel.swift */; };
 		126360A522DF8894007FDBC0 /* washCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126360A322DF8894007FDBC0 /* washCell.swift */; };
 		126360A622DF8894007FDBC0 /* washCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 126360A422DF8894007FDBC0 /* washCell.xib */; };
-		126360A822DFA5B6007FDBC0 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126360A722DFA5B6007FDBC0 /* DateUtils.swift */; };
+		12AB0CBD22E03D570002FB8A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AB0CBC22E03D570002FB8A /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		126360A022DF235A007FDBC0 /* APIErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorModel.swift; sourceTree = "<group>"; };
 		126360A322DF8894007FDBC0 /* washCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = washCell.swift; sourceTree = "<group>"; };
 		126360A422DF8894007FDBC0 /* washCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = washCell.xib; sourceTree = "<group>"; };
-		126360A722DFA5B6007FDBC0 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		12AB0CBC22E03D570002FB8A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1D4327D248117B457B5EDD2C /* Pods-AmazePOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazePOC.debug.xcconfig"; path = "Target Support Files/Pods-AmazePOC/Pods-AmazePOC.debug.xcconfig"; sourceTree = "<group>"; };
 		85F36F27F42E62385CF25217 /* Pods-AmazePOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazePOC.release.xcconfig"; path = "Target Support Files/Pods-AmazePOC/Pods-AmazePOC.release.xcconfig"; sourceTree = "<group>"; };
 		FA1D271946903F773205CA76 /* Pods_AmazePOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazePOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +108,7 @@
 			children = (
 				1263609A22DF1DCC007FDBC0 /* APIRequestConstants.swift */,
 				1263609C22DF1DF3007FDBC0 /* APIRequestHelper.swift */,
-				126360A722DFA5B6007FDBC0 /* DateUtils.swift */,
+				12AB0CBC22E03D570002FB8A /* Utils.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -241,6 +241,9 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AmazePOC/Pods-AmazePOC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/TRON/TRON.framework",
 			);
@@ -249,6 +252,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRON.framework",
 			);
@@ -265,7 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				126360A522DF8894007FDBC0 /* washCell.swift in Sources */,
-				126360A822DFA5B6007FDBC0 /* DateUtils.swift in Sources */,
+				12AB0CBD22E03D570002FB8A /* Utils.swift in Sources */,
 				1263609F22DF22F5007FDBC0 /* Model.swift in Sources */,
 				1263609D22DF1DF3007FDBC0 /* APIRequestHelper.swift in Sources */,
 				1263608822DF19E5007FDBC0 /* ViewController.swift in Sources */,

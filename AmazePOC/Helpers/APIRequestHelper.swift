@@ -15,7 +15,7 @@ class APIRequestHelper{
     static let tron = TRON(baseURL: APIRequestConstants.baseUrl)
 
     static func RequestTask(parameters: [String:AnyObject]) -> APIRequest<ResponseModel, APIErrorModel> {
-        let request: APIRequest<ResponseModel, APIErrorModel> = tron.codable.request(APIRequestConstants.accountUrl)
+        let request: APIRequest<ResponseModel, APIErrorModel> = tron.codable.request(APIRequestConstants.carInfoUrl)
         request.method = .post
         request.parameters = parameters
         request.parameterEncoding = URLEncoding.default

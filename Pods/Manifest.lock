@@ -1,25 +1,70 @@
 PODS:
   - Alamofire (4.8.1)
+  - MaterialComponents/AnimationTiming (78.0.1)
+  - MaterialComponents/Buttons (78.0.1):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Ink (78.0.1):
+    - MaterialComponents/private/Math
+  - MaterialComponents/OverlayWindow (78.0.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Application (78.0.1)
+  - MaterialComponents/private/KeyboardWatcher (78.0.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (78.0.1)
+  - MaterialComponents/private/Overlay (78.0.1)
+  - MaterialComponents/ShadowElevations (78.0.1)
+  - MaterialComponents/ShadowLayer (78.0.1):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (78.0.1):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/Snackbar (78.0.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/Typography
+  - MaterialComponents/Typography (78.0.1):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
   - SVProgressHUD (2.2.5)
   - TRON/Core (4.2.1):
     - Alamofire (~> 4.5)
 
 DEPENDENCIES:
   - Alamofire
+  - MaterialComponents/Snackbar
   - SVProgressHUD
   - TRON/Core
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
     - SVProgressHUD
     - TRON
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  MaterialComponents: 1e1d1a8356bbf2b80f6a0aa32018cda8ac8065a5
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TRON: eb0f572d97dd51ec309a27bc785ec82148500512
 
-PODFILE CHECKSUM: 95125a665c18156eaa3dbe9eb6648d5d235a4ec9
+PODFILE CHECKSUM: b2c31413fcedc58ac318ff2d61096e1a41d1f5d5
 
 COCOAPODS: 1.6.1
